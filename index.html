@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trimy s.r.o.</title>
+        
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/config.css" />
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="content">
+                <div class="logo">
+                    <img class="icon" src="assets/logo.png" />
+                    <div class="title">TRIMY</div>
+                </div>
+
+                <div class="menu">
+                    <a class="menu-item">Domov</a>
+                    <a class="menu-item">Služby</a>
+                    <a class="menu-item">Partneri</a>
+                    <a class="menu-item">O nás</a>
+                    <a class="menu-item">Kontakt</a>
+                    <a class="menu-item filled">Napíšte nám</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="home">
+            <div class="content">
+                <div class="info-panel">
+                    <div class="title">AUTOMATIZÁCIA DOMÁCNOSTÍ</div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat.
+                    </div>
+                    <a class="button">Zisti viac</a>
+                </div>
+
+                <div class="icon-panel">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="content">
+                <div class="title-small">SLUŽBY</div>
+                <div class="title-large">Automatizácia je funkčným<br />prvkom každej stavby</div>
+                
+                <div class="services">
+                    <div class="panel">
+                        <div class="item">
+                            <ion-icon class="icon" name="home"></ion-icon>
+                            <div class="info">
+                                <div class="title">Inteligentné domy</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <a class="button">Viac info</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ion-icon class="icon" name="git-network"></ion-icon>
+                            <div class="info">
+                                <div class="title">Elektroinštalácie</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <a class="button">Viac info</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ion-icon class="icon" name="videocam"></ion-icon>
+                            <div class="info">
+                                <div class="title">Kamerové systémy</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <a class="button">Viac info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="item">
+                            <ion-icon class="icon" name="wifi"></ion-icon>
+                            <div class="info">
+                                <div class="title">Dátové siete</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <a class="button">Viac info</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ion-icon class="icon" name="play-forward"></ion-icon>
+                            <div class="info">
+                                <div class="title">Projekcia</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <a class="button">Viac info</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ion-icon class="icon" name="layers"></ion-icon>
+                            <div class="info">
+                                <div class="title">Realizácia</div>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <a class="button">Viac info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="content">
+                <div class="info-panel">
+                    <div class="logo-panel">
+                        <div class="logo">
+                            <img class="icon" src="assets/logo-white.png" />
+                            <div class="title">TRIMY</div>
+                        </div>
+                    </div>
+
+                    <div class="link-panel">
+                        <div class="column">
+                            <div class="title">Navigácia</div>
+                            <a class="item">Domov</a>
+                            <a class="item">Služby</a>
+                            <a class="item">Partneri</a>
+                            <a class="item">O nás</a>
+                            <a class="item">Kontakt</a>
+                        </div>
+
+                        <div class="column">
+                            <div class="title">Služby</div>
+                            <a class="item">Inteligentné domy</a>
+                            <a class="item">Elektroinštalácia</a>
+                            <a class="item">Kamerové systémy</a>
+                            <a class="item">Dátové siete</a>
+                            <a class="item">Projekcia</a>
+                            <a class="item">Realizácia</a>
+                        </div>
+
+                        <div class="column">
+                            <div class="title">Kontakt</div>
+                            <a class="item">Kukučínova 619/9</a>
+                            <a class="item">90201 Pezinok Slovensko</a>
+                            <a class="item">+421 908 797 852</a>
+                            <a class="item">trimy@trimy.sk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-panel">
+                    <form class="form" action="php/contact.php" method="post">
+                        <input class="input" type="text" name="name" placeholder="Meno a priezvisko" required>
+                        <input class="input" type="email" name="email" placeholder="E-mail" required>
+                        <textarea class="text" name="message" placeholder="Správa" rows="7" required></textarea>
+
+                        <input class="submit" name="submit" type="submit" value="Odoslať">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    </body>
+</html>
