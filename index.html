@@ -21,12 +21,12 @@
                 </div>
 
                 <div class="menu">
-                    <a class="menu-item">Domov</a>
-                    <a class="menu-item">Služby</a>
+                    <a class="menu-item" href="#home">Domov</a>
+                    <a class="menu-item" href="#services">Služby</a>
                     <a class="menu-item">Partneri</a>
                     <a class="menu-item">O nás</a>
-                    <a class="menu-item">Kontakt</a>
-                    <a class="menu-item filled">Napíšte nám</a>
+                    <a class="menu-item" href="#footer">Kontakt</a>
+                    <a class="menu-item filled" href="#footer">Napíšte nám</a>
                 </div>
             </div>
         </div>
@@ -38,11 +38,11 @@
                     <div class="text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat.
                     </div>
-                    <a class="button">Zisti viac</a>
+                    <a class="button" href="#services">Zisti viac</a>
                 </div>
 
                 <div class="icon-panel">
-
+                    <img class="icon" src="assets/home-icon.png" />
                 </div>
             </div>
         </div>
@@ -122,21 +122,21 @@
                     <div class="link-panel">
                         <div class="column">
                             <div class="title">Navigácia</div>
-                            <a class="item">Domov</a>
-                            <a class="item">Služby</a>
+                            <a class="item" href="#home">Domov</a>
+                            <a class="item" href="#services">Služby</a>
                             <a class="item">Partneri</a>
                             <a class="item">O nás</a>
-                            <a class="item">Kontakt</a>
+                            <a class="item" href="#footer">Kontakt</a>
                         </div>
 
                         <div class="column">
                             <div class="title">Služby</div>
-                            <a class="item">Inteligentné domy</a>
-                            <a class="item">Elektroinštalácia</a>
-                            <a class="item">Kamerové systémy</a>
-                            <a class="item">Dátové siete</a>
-                            <a class="item">Projekcia</a>
-                            <a class="item">Realizácia</a>
+                            <a class="item" href="#services">Inteligentné domy</a>
+                            <a class="item" href="#services">Elektroinštalácia</a>
+                            <a class="item" href="#services">Kamerové systémy</a>
+                            <a class="item" href="#services">Dátové siete</a>
+                            <a class="item" href="#services">Projekcia</a>
+                            <a class="item" href="#services">Realizácia</a>
                         </div>
 
                         <div class="column">
@@ -162,5 +162,23 @@
         </div>
 
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script>
+            smoothScroll("#header .content .menu .menu-item");
+            smoothScroll("#home .content .info-panel .button");
+            smoothScroll("#footer .content .info-panel .link-panel .column a");
+
+            function smoothScroll(button) {
+                $(button).on("click", function (e) {
+                    if ("" !== this.hash) {
+                        e.preventDefault();
+                        var offset = 120;
+                        var t = this.hash;
+                        $("html, body").animate({
+                            scrollTop: $(t).offset().top - offset
+                        }, 800, function () {})
+                    }
+                })
+            }
+        </script>
     </body>
 </html>
