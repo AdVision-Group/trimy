@@ -1083,73 +1083,146 @@ input[type="submit"],
     
 }
 
-#footer .content .form-panel .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+@media (min-width: 700px) {
+    #footer .content .form-panel .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #footer .content .form-panel .form .input {
+        width: 250px;
+
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+
+        padding: 10px;
+        margin-bottom: 10px;
+
+        outline: none;
+        border: none;
+
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #footer .content .form-panel .form .text {
+        width: 400px;
+
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+
+        padding: 10px;
+        margin-bottom: 10px;
+
+        outline: none;
+        border: none;
+        resize: none;
+
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #footer .content .form-panel .form .submit {
+        width: 150px;
+
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        
+        padding: 5px 20px 5px 20px;
+        margin: 20px 0px 3px 0px;
+
+        border: none;
+        outline: none;
+
+        border-bottom: 4px solid rgb(124, 13, 28);
+
+        transition: all 100ms;
+
+        background-color: rgb(182, 21, 42);
+
+        background-color: #3E885B;
+        border-bottom: 4px solid #326d49;
+    }
+
+    #footer .content .form-panel .form .submit:hover {
+        transform: rotateX(-20deg);
+        border-bottom: 7px solid #326d49;
+
+        margin-bottom: 0;
+    }
 }
 
-#footer .content .form-panel .form .input {
-    width: 250px;
-    max-width: 250px;
+@media (max-width: 700px) {
+    #footer .content .form-panel .form {
+        width: 100%;
 
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-    padding: 10px;
-    margin-bottom: 10px;
+    #footer .content .form-panel .form .input {
+        width: 100%;
 
-    outline: none;
-    border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
 
-    background-color: rgba(255, 255, 255, 0.1);
-}
+        padding: 10px;
+        margin-bottom: 10px;
 
-#footer .content .form-panel .form .text {
-    width: 400px;
-    max-width: 400px;
+        outline: none;
+        border: none;
 
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 
-    padding: 10px;
-    margin-bottom: 10px;
+    #footer .content .form-panel .form .text {
+        width: 100%;
 
-    outline: none;
-    border: none;
-    resize: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
 
-    background-color: rgba(255, 255, 255, 0.1);
-}
+        padding: 10px;
+        margin-bottom: 10px;
 
-#footer .content .form-panel .form .submit {
-    width: 150px;
+        outline: none;
+        border: none;
+        resize: none;
 
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
-    
-    padding: 5px 20px 5px 20px;
-    margin: 20px 0px 3px 0px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 
-    border: none;
-    outline: none;
+    #footer .content .form-panel .form .submit {
+        width: 100%;
 
-    border-bottom: 4px solid rgb(124, 13, 28);
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        
+        padding: 5px 20px 5px 20px;
+        margin: 20px 0px 3px 0px;
 
-    transition: all 100ms;
+        border: none;
+        outline: none;
 
-    background-color: rgb(182, 21, 42);
+        border-bottom: 4px solid rgb(124, 13, 28);
 
-    background-color: #3E885B;
-    border-bottom: 4px solid #326d49;
-}
+        transition: all 100ms;
 
-#footer .content .form-panel .form .submit:hover {
-    transform: rotateX(-20deg);
-    border-bottom: 7px solid #326d49;
+        background-color: rgb(182, 21, 42);
 
-    margin-bottom: 0;
+        background-color: #3E885B;
+        border-bottom: 4px solid #326d49;
+    }
+
+    #footer .content .form-panel .form .submit:hover {
+        transform: rotateX(-20deg);
+        border-bottom: 7px solid #326d49;
+
+        margin-bottom: 0;
+    }
 }
