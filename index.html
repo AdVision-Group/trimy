@@ -7,6 +7,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         <link rel="stylesheet" type="text/css" href="css/config.css" />
@@ -23,8 +24,8 @@
                 <div class="menu">
                     <a class="menu-item" href="#home">Domov</a>
                     <a class="menu-item" href="#services">Služby</a>
-                    <a class="menu-item">Partneri</a>
-                    <a class="menu-item">O nás</a>
+                    <a class="menu-item" href="#partners">Partneri</a>
+                    <a class="menu-item" href="#references">Referencie</a>
                     <a class="menu-item" href="#footer">Kontakt</a>
                     <a class="menu-item filled" href="#footer">Napíšte nám</a>
                 </div>
@@ -34,11 +35,11 @@
         <div id="home">
             <div class="content">
                 <div class="info-panel">
-                    <div class="title">AUTOMATIZÁCIA DOMÁCNOSTÍ</div>
-                    <div class="text">
+                    <div class="title animate__animated animate__fadeInUp">AUTOMATIZÁCIA DOMÁCNOSTÍ</div>
+                    <div class="text animate__animated animate__fadeInUp animate__delay-2s">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper facilisis. Pellentesque placerat.
                     </div>
-                    <a class="button" href="#services">Zisti viac</a>
+                    <a class="button animate__animated animate__fadeIn animate__delay-4s" href="#services">Zisti viac</a>
                 </div>
 
                 <div class="icon-panel">
@@ -53,58 +54,208 @@
                 <div class="title-large">Automatizácia je funkčným<br />prvkom každej stavby</div>
                 
                 <div class="services">
-                    <div class="panel">
-                        <div class="item">
+                    <div id="ser-pan-1" class="panel">
+                        <div id="ser-item-1" class="item">
                             <ion-icon class="icon" name="home"></ion-icon>
                             <div class="info">
                                 <div class="title">Inteligentné domy</div>
                                 <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                <a class="button">Viac info</a>
                             </div>
                         </div>
-                        <div class="item">
+                        <div id="ser-item-2" class="item">
                             <ion-icon class="icon" name="git-network"></ion-icon>
                             <div class="info">
                                 <div class="title">Elektroinštalácie</div>
                                 <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                <a class="button">Viac info</a>
                             </div>
                         </div>
-                        <div class="item">
+                        <div id="ser-item-3" class="item">
                             <ion-icon class="icon" name="videocam"></ion-icon>
                             <div class="info">
                                 <div class="title">Kamerové systémy</div>
                                 <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                <a class="button">Viac info</a>
                             </div>
                         </div>
                     </div>
-                    <div class="panel">
-                        <div class="item">
+                    <div id="ser-pan-2" class="panel">
+                        <div id="ser-item-4" class="item">
                             <ion-icon class="icon" name="wifi"></ion-icon>
                             <div class="info">
                                 <div class="title">Dátové siete</div>
                                 <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                <a class="button">Viac info</a>
                             </div>
                         </div>
-                        <div class="item">
+                        <div id="ser-item-5" class="item">
                             <ion-icon class="icon" name="play-forward"></ion-icon>
                             <div class="info">
                                 <div class="title">Projekcia</div>
                                 <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                <a class="button">Viac info</a>
                             </div>
                         </div>
-                        <div class="item">
+                        <div id="ser-item-6" class="item">
                             <ion-icon class="icon" name="layers"></ion-icon>
                             <div class="info">
                                 <div class="title">Realizácia</div>
                                 <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                <a class="button">Viac info</a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="partners">
+            <div class="content">
+                <div class="title-small">PARTNERI</div>
+                <div class="title-large">Partneri, s ktorými spolupracujeme</div>
+
+                <div class="partners">
+                    <div class="item">
+                        <img class="image" src="assets/partners-knx.png" />
+                        <!--<div class="title">KNX</div>-->
+                    </div>
+
+                    <div class="item">
+                        <img class="image" src="assets/partners-niko.png" />
+                        <!--<div class="title">Niko Illuminating Ideas</div>-->
+                    </div>
+
+                    <div class="item">
+                        <img class="image" src="assets/partners-axis.png" />
+                        <!--<div class="title">AXIS communications</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="references">
+            <div class="content">
+                <div class="title-small">REFERENCIE</div>
+                <div class="title-large">Naši spokojní zákazníci</div>
+
+                <div class="references">
+                    <div class="item" style="background-color: white">
+                        <div class="image-panel">
+                            <div id="ref-img-1" class="image-container">
+                                <div class="overlay"></div>
+                                <img class="image" src="assets/reference-rd-prievoz.jpg" />
+                            </div>
+                        </div>
+
+                        <div class="text-panel">
+                            <div id="ref-pan-1" class="text-container">
+                                <div class="title">Rodinný dom Prievoz</div>
+                                <div class="info">Rodinný dom celkovou rozlohou cca 240m2</div>
+                                
+                                <div class="heading">Rozsah projektu</div>
+                                <div class="info"><div class="bullet"></div>Kompletná dodávka, montáž, programovanie a servisovanie elektroinštalácie na báze systému KNX</div>
+                                <div class="info"><div class="bullet"></div>Kompletné ovládanie svetla: 68 spínaných okruhov, 8 stmievaných okruhov</div>
+                                <div class="info"><div class="bullet"></div>Riadenie kúrenia: 16 samostatných kúriacich zón</div>
+                                <div class="info"><div class="bullet"></div>Riadenie chladenia: 4 zóny</div>
+                                <div class="info"><div class="bullet"></div>Riadenie žalúzií: 30 motorov</div>
+                                <div class="info"><div class="bullet"></div>Multiroom: 5 samostatných zón</div>
+                                <div class="info"><div class="bullet"></div>Všetko pri dodržaní požiadavky minimálneho počtu ovládacích prvkov, tak aby nebol narušený prepracovaný interiér na mieru, an ktorý bol kladený veľký dôraz</div>
+                                <div class="info"><div class="bullet"></div>Čiastočná dodávka svietidiel na báze LED svetelných zdrojov vyrobených na mieru, podľa potreby zákazníka</div>
+                                <div class="info"><div class="bullet"></div>Všetky potrebné funkcie je možné ovládať prostredníctvom vizualizácie pomocou tabletov, smartfónov s možnosťou vzdialeného prístupu cez internet</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-color: rgb(245, 245, 245);">
+                        <div class="image-panel">
+                            <div id="ref-img-2" class="image-container">
+                                <div class="overlay"></div>
+                                <img class="image" src="assets/reference-byt-leskova.jpg" />
+                            </div>
+                        </div>
+
+                        <div class="text-panel">
+                            <div id="ref-pan-2" class="text-container">
+                                <div class="title">Byt v Bratislave na Leškovej ulici</div>
+                                <div class="info">Mezonetový byt s celkovou rozlohou cca 180m2 + 20m2 terasa</div>
+                                
+                                <div class="heading">Rozsah projektu</div>
+                                <div class="info"><div class="bullet"></div>Kompletná dodávka, montáž, programovanie a servisovanie elektroinštalácie na báze systému Niko home control</div>
+                                <div class="info"><div class="bullet"></div>Kompletné ovládanie svetla: celkovo 28 spínaných okruhov</div>
+                                <div class="info"><div class="bullet"></div>Riadenie kúrenia: 7 samostatných kúriacich zón</div>
+                                <div class="info"><div class="bullet"></div>Riadenie žalúzií v rozsahu 7 motorov</div>
+                                <div class="info"><div class="bullet"></div>Všetko pri dodržaní požiadavky minimálneho počtu ovládacích prvkov, tak aby nebol narušený prepracovaný interiér na mieru, an ktorý bol kladený veľký dôraz</div>
+                                <div class="info"><div class="bullet"></div>Všetky potrebné funkcie je možné ovládať prostredníctvom vizualizácie pomocou tabletov, smartfónov s možnosťou vzdialeného prístupu cez internet</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-color: white;">
+                        <div class="image-panel">
+                            <div id="ref-img-3" class="image-container">
+                                <div class="overlay"></div>
+                                <img class="image" src="assets/reference-rd-bratislava.jpg" />
+                            </div>
+                        </div>
+
+                        <div class="text-panel">
+                            <div id="ref-pan-3" class="text-container">
+                                <div class="title">Rodinný dom v Bratislave</div>
+                                <div class="info">S celkovou úžitkovou plochou cca 250m2</div>
+                                
+                                <div class="heading">Rozsah projektu</div>
+                                <div class="info"><div class="bullet"></div>Kompletná dodávka, montáž, programovanie a servisovanie elektroinštalácie na báze systému KNX montáž všetkých svietidiel, kompletná dodávka svietidiel (niektoré svietidlá na báze LED svetelných zdrojov vyrobených na mieru)</div>
+                                <div class="info"><div class="bullet"></div>Kompletné ovládanie svetla: cca 50 okruhov (spínanie, stmievanie, DALI, DMX)</div>
+                                <div class="info"><div class="bullet"></div>Kompletné riadenie kúrenia, klimatizácie a vetrania: 8 samostatných kúriacich zón, 4 samostatne riadených zón chladenia, riadenie vetrania s rekuperáciou</div>
+                                <div class="info"><div class="bullet"></div>Riadenie žalúzií v rozsahu 16 motorov zoradených</div>
+                                <div class="info"><div class="bullet"></div>Všetko pri dodržaní požiadavky minimálneho počtu ovládacích prvkov, tak aby nebol narušený prepracovaný interiér na mieru, an ktorý bol kladený veľký dôraz</div>
+                                <div class="info"><div class="bullet"></div>Všetky potrebné funkcie je možné ovládať prostredníctvom vizualizácie pomocou tabletov, s moznosťou vzdialeného prístupu cez internet</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-color: rgb(245, 245, 245);">
+                        <div class="image-panel">
+                            <div id="ref-img-4" class="image-container">
+                                <div class="overlay"></div>
+                                <img class="image" src="assets/reference-rd-samorin.jpg" />
+                            </div>
+                        </div>
+
+                        <div class="text-panel">
+                            <div id="ref-pan-4" class="text-container">
+                                <div class="title">Rodinný dom v Šamoríne</div>
+                                <div class="info">Rodinný dom celkovou rozlohou cca 270m2 </div>
+                                
+                                <div class="heading">Rozsah projektu</div>
+                                <div class="info"><div class="bullet"></div>Kompletná dodávka, montáž, programovanie a servisovanie elektroinštalácie na báze systému Niko home control</div>
+                                <div class="info"><div class="bullet"></div>Kompletné ovládanie svetla: celkovo 48 spínaných okruhov, 4 stmievané okruhy</div>
+                                <div class="info"><div class="bullet"></div>Riadenie kúrenia: 18 samostatných kúriacich zón</div>
+                                <div class="info"><div class="bullet"></div>Všetko pri dodržaní požiadavky minimálneho počtu ovládacích prvkov, tak aby nebol narušený prepracovaný interiér na mieru, an ktorý bol kladený veľký dôraz</div>
+                                <div class="info"><div class="bullet"></div>Čiastočná dodávka svietidiel na báze LED svetelných zdrojov vyrobených na mieru, podľa potreby zákazníka</div>
+                                <div class="info"><div class="bullet"></div>Všetky potrebné funkcie je možné ovládať prostredníctvom vizualizácie pomocou tabletov, smartfónov s možnosťou vzdialeného prístupu cez internet</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="item" style="background-color: white;">
+                        <div class="image-panel">
+                            <div id="ref-img-5" class="image-container" style="height: 350px;">
+                                <div class="overlay"></div>
+                                <img class="image" src="assets/reference-allianz.jpg" />
+                            </div>
+                        </div>
+
+                        <div class="text-panel">
+                            <div id="ref-pan-5" class="text-container">
+                                <div class="title">Allianz</div>
+                                <div class="info">Allianz Slovenská poisťovňa</div>
+                                
+                                <div class="info"><div class="bullet"></div>Štruktúrovaná kabeláž</div>
+                                <div class="info"><div class="bullet"></div>Optické siete</div>
+                                <div class="info"><div class="bullet"></div>Elektroinštalácie pre dátové aplikácie</div>
+                                <div class="info"><div class="bullet"></div>Wifi sieť</div>
+                                <div class="info"><div class="bullet"></div>Informačné LED panely</div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -171,7 +322,7 @@
                 $(button).on("click", function (e) {
                     if ("" !== this.hash) {
                         e.preventDefault();
-                        var offset = 120;
+                        var offset = 80;
                         var t = this.hash;
                         $("html, body").animate({
                             scrollTop: $(t).offset().top - offset
@@ -180,5 +331,6 @@
                 })
             }
         </script>
+        <script src="js/index.js"></script>
     </body>
 </html>

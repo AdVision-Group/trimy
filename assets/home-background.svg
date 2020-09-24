@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9815.643" height="5327.933" viewBox="0 0 9815.643 5327.933">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="18" y="13" width="9815.643" height="5327.933" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.148" y1="0.283" x2="1.157" y2="0.828" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e885b"/>
+      <stop offset="1" stop-color="#85bda6"/>
+    </linearGradient>
+  </defs>
+  <g id="Scroll_Group_7" data-name="Scroll Group 7" transform="translate(-18 -13)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Component_3_3" data-name="Component 3 – 3">
+      <path id="Path_6" data-name="Path 6" d="M0,4865.643H9833.643V7830.566s-138.018,764.639-692,802.476-731.049-244.314-1414.147-220.408-637.39,901.958-1385.18,947.355-826.43-460.518-1633.77-460.518-1150.461,829.982-1997.1,906.479S1392.7,8966.042,735.427,8952.943,0,9681.067,0,9681.067Z" transform="translate(0 -4865.643)" fill="url(#linear-gradient)"/>
+      <path id="Path_7" data-name="Path 7" d="M1336.609,9523.641s658.948-446.672,1650.608-442.5,1183.125,442.5,1183.125,442.5,951.95-666.062,1656.756-731.652,1162.469,469.29,1162.469,469.29,1330.97-1178.737,1980.05-1266.521,859.812,404.79,859.812,404.79l-221.39,289.907L6790.432,9764.094l-4527.543,442.481Z" transform="translate(0 -4865.643)" fill="rgba(255,255,255,0.24)"/>
+    </g>
+  </g>
+</svg>
