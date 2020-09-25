@@ -1,3 +1,59 @@
+/*function showMenu() {
+    var button = document.getElementById("mobile-button");
+    var menu = document.getElementById("mobile-menu");
+
+    document.getElementById("mobile-line-2").style.width = "70%";
+    document.getElementById("mobile-line-3").style.width = "40%";
+
+    menu.style.right = "0";
+
+    button.setAttribute("onclick", "hideMenu();");
+}*/
+
+/*function hideMenu() {
+    var button = document.getElementById("mobile-button");
+    var menu = document.getElementById("mobile-menu");
+
+    document.getElementById("mobile-line-2").style.width = "100%";
+    document.getElementById("mobile-line-3").style.width = "100%";
+
+    menu.style.right = "-100vw";
+
+    button.setAttribute("onclick", "showMenu();");
+}*/
+
+function showMenu() {
+    var menuButton = document.getElementById("menu-button");
+    var menu = document.getElementById("mobile-menu");
+
+    menuButton.childNodes[1].style.transform = "translateY(8px) rotate(45deg)";
+    menuButton.childNodes[3].style.transform = "scale(0)";
+    menuButton.childNodes[5].style.transform = "translateY(-8px) rotate(-45deg)";
+
+    menuButton.setAttribute("onclick", "hideMenu()");
+
+    menu.style.display = "inline-block";
+    setTimeout(function() {
+        menu.style.right = "0";
+    }, 1);
+}
+
+function hideMenu() {
+    var menuButton = document.getElementById("menu-button");
+    var menu = document.getElementById("mobile-menu");
+
+    menuButton.childNodes[1].style.transform = "none";
+    menuButton.childNodes[3].style.transform = "none";
+    menuButton.childNodes[5].style.transform = "none";
+
+    menuButton.setAttribute("onclick", "showMenu()");
+
+    menu.style.right = "-100vw";
+    setTimeout(function() {
+        menu.style.display = "none";
+    }, 601);
+}
+
 window.onscroll = function() {
     animateServices();
     animateReferences();
