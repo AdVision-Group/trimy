@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
     <head>
         <title>TRIMY | Automatizácia bytov a domov</title>
         
@@ -55,12 +55,12 @@
 
         <div id="mobile-menu">
             <div class="content">
-                <a class="item">Domov</a>
-                <a class="item">Služby</a>
-                <a class="item">Partneri</a>
-                <a class="item">Referencie</a>
-                <a class="item">Kontakt</a>
-                <a class="item">Napíšte nám</a>
+                <a class="item" href="#home">Domov</a>
+                <a class="item" href="#services">Služby</a>
+                <a class="item" href="#partners">Partneri</a>
+                <a class="item" href="#references">Referencie</a>
+                <a class="item" href="#footer">Kontakt</a>
+                <a class="item" href="#footer">Napíšte nám</a>
             </div>
         </div>
 
@@ -90,45 +90,59 @@
                         <div id="ser-item-1" class="item">
                             <ion-icon class="icon" name="home"></ion-icon>
                             <div class="info">
-                                <div class="title">Inteligentné domy</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <div class="title">Automatizácia budov</div>
+                                <div class="text">
+                                    Riadenie osvetlenia a tienenia, žalúzií a roliet, riadenie vykurovania a chladenia, vizualizácia, meranie energií, optimalizácia spotreby energií, systémová integrácia technológií na protokoloch BACnet, Modbus, KNX, OPC, DALI, Enocean, kamerové a prístupové systémy
+                                </div>
                             </div>
                         </div>
                         <div id="ser-item-2" class="item">
                             <ion-icon class="icon" name="git-network"></ion-icon>
                             <div class="info">
-                                <div class="title">Elektroinštalácie</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                            </div>
-                        </div>
-                        <div id="ser-item-3" class="item">
-                            <ion-icon class="icon" name="videocam"></ion-icon>
-                            <div class="info">
-                                <div class="title">Kamerové systémy</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <div class="title">Inteligentné domy</div>
+                                <div class="text">
+                                    Riadenie osvetlenia a tienenia, žalúzií a roliet, vykurovania a chladenia, meranie energií, optimalizácia spotreby energií, vizualizácia a ovládanie domu cez smartphone
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div id="ser-pan-2" class="panel">
+                        <div id="ser-item-3" class="item">
+                            <ion-icon class="icon" name="analytics"></ion-icon>
+                            <div class="info">
+                                <div class="title">Meranie a regulácia spotreby energií</div>
+                                <div class="text">
+                                    Meranie elektrickej energie, spotreby vody, spotreby tepla a spotreby plynu
+                                </div>
+                            </div>
+                        </div>
                         <div id="ser-item-4" class="item">
                             <ion-icon class="icon" name="wifi"></ion-icon>
                             <div class="info">
                                 <div class="title">Dátové siete</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <div class="text">
+                                    Dátové siete LAN, Wifi, WAN, bezpečnosť, vzdialený prístup, VPN, kamerové a prístupové systémy, zabezpečovacie systémy EZS
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="ser-pan-1" class="panel">
                         <div id="ser-item-5" class="item">
                             <ion-icon class="icon" name="play-forward"></ion-icon>
                             <div class="info">
-                                <div class="title">Projekcia</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <div class="title">Realizácia</div>
+                                <div class="text">
+                                    Kompletná dodávka na kľúč riadiacich systémov budov, výrobných a technologických prevádzok, rodinných domov, inštalačné práce, softwaerové práce, poradenstvo
+                                </div>
                             </div>
                         </div>
                         <div id="ser-item-6" class="item">
                             <ion-icon class="icon" name="layers"></ion-icon>
                             <div class="info">
-                                <div class="title">Realizácia</div>
-                                <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                <div class="title">Projekcia</div>
+                                <div class="text">
+                                    Automatizácia budov, meranie a regulácia MaR, inteligentné domy, elektroinštalácia, bleskozvod
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -324,10 +338,10 @@
 
                         <div class="column">
                             <div class="title">Kontakt</div>
-                            <a class="item">Kukučínova 619/9</a>
-                            <a class="item">90201 Pezinok Slovensko</a>
-                            <a class="item">+421 908 797 852</a>
-                            <a class="item">trimy@trimy.sk</a>
+                            <a class="item" href="http://maps.google.com/?q=TRIMY s. r. o., Kukučínova, Pezinok">Kukučínova 619/9</a>
+                            <a class="item" href="http://maps.google.com/?q=TRIMY s. r. o., Kukučínova, Pezinok">90201 Pezinok Slovensko</a>
+                            <a class="item" href="tel: +421-908-797-852">+421 908 797 852</a>
+                            <a class="item" href="mailto:trimy@trimy.sk">trimy@trimy.sk</a>
                         </div>
                     </div>
                 </div>
@@ -349,6 +363,7 @@
             smoothScroll("#header .content .menu .menu-item");
             smoothScroll("#home .content .info-panel .button");
             smoothScroll("#footer .content .info-panel .link-panel .column a");
+            smoothScrollMobile("#mobile-menu .content .item");
 
             function smoothScroll(button) {
                 $(button).on("click", function (e) {
@@ -359,6 +374,24 @@
                         $("html, body").animate({
                             scrollTop: $(t).offset().top - offset
                         }, 800, function () {})
+                    }
+                })
+            }
+
+            function smoothScrollMobile(button) {
+                $(button).on("click", function (e) {
+                    if ("" !== this.hash) {
+                        e.preventDefault();
+                        var offset = 80;
+                        var t = this.hash;
+
+                        hideMenu();
+                        
+                        setTimeout(function() {
+                            $("html, body").animate({
+                            scrollTop: $(t).offset().top - offset
+                        }, 800, function () {})
+                        }, 601);
                     }
                 })
             }
