@@ -430,10 +430,12 @@ input[type="submit"],
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        margin-right: 30px;
     }
 
     #home .content .icon-panel .icon {
-        width: 85%;
+        width: 95%;
 
         margin-top: 30px;
     }
@@ -1179,9 +1181,9 @@ input[type="submit"],
 #footer .content .info-panel .link-panel .column .item {
     color: rgba(255, 255, 255, 0.4);
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
 
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
     transition: all 200ms;
 }
@@ -1336,4 +1338,25 @@ input[type="submit"],
 
         margin-bottom: 0;
     }
+}
+
+#footer .bottom {
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: rgb(20, 20, 20);
+}
+
+#footer .bottom .text {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+
+    width: 100%;
+}
+
+#footer .bottom .link {
+    color: white;
 }

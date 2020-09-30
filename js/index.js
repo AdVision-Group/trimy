@@ -62,17 +62,41 @@ window.onscroll = function() {
 function animateServices() {
     var height = window.innerHeight;
     
-    var serPan1 = document.getElementById("ser-pan-1");
-    var serPan2 = document.getElementById("ser-pan-2");
+    var serItem1 = document.getElementById("ser-item-1");
+    var serItem2 = document.getElementById("ser-item-2");
+    var serItem3 = document.getElementById("ser-item-3");
+    var serItem4 = document.getElementById("ser-item-4");
+    var serItem5 = document.getElementById("ser-item-5");
+    var serItem6 = document.getElementById("ser-item-6");
 
-    if (serPan1.getBoundingClientRect().top < height) {
-        serPan1.classList.add("animate__animated");
-        serPan1.classList.add("animate__fadeInUp");
+    if (serItem1.getBoundingClientRect().top < height) {
+        serItem1.classList.add("animate__animated");
+        serItem1.classList.add("animate__fadeInUp");
     }
 
-    if (serPan2.getBoundingClientRect().top < height) {
-        serPan2.classList.add("animate__animated");
-        serPan2.classList.add("animate__fadeInUp");
+    if (serItem2.getBoundingClientRect().top < height) {
+        serItem2.classList.add("animate__animated");
+        serItem2.classList.add("animate__fadeInUp");
+    }
+
+    if (serItem3.getBoundingClientRect().top < height) {
+        serItem3.classList.add("animate__animated");
+        serItem3.classList.add("animate__fadeInUp");
+    }
+
+    if (serItem4.getBoundingClientRect().top < height) {
+        serItem4.classList.add("animate__animated");
+        serItem4.classList.add("animate__fadeInUp");
+    }
+
+    if (serItem5.getBoundingClientRect().top < height) {
+        serItem5.classList.add("animate__animated");
+        serItem5.classList.add("animate__fadeInUp");
+    }
+
+    if (serItem6.getBoundingClientRect().top < height) {
+        serItem6.classList.add("animate__animated");
+        serItem6.classList.add("animate__fadeInUp");
     }
 }
 
