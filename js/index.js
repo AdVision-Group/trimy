@@ -108,12 +108,14 @@ function animateReferences() {
     var refImg3 = document.getElementById("ref-img-3");
     var refImg4 = document.getElementById("ref-img-4");
     var refImg5 = document.getElementById("ref-img-5");
+    var refImg6 = document.getElementById("ref-img-6");
 
     var refPan1 = document.getElementById("ref-pan-1");
     var refPan2 = document.getElementById("ref-pan-2");
     var refPan3 = document.getElementById("ref-pan-3");
     var refPan4 = document.getElementById("ref-pan-4");
     var refPan5 = document.getElementById("ref-pan-5");
+    var refPan6 = document.getElementById("ref-pan-6");
 
     if (refImg1.getBoundingClientRect().top < height) {
         refImg1.classList.add("animate__animated");
@@ -153,5 +155,13 @@ function animateReferences() {
 
         refPan5.classList.add("animate__animated");
         refPan5.classList.add("animate__fadeInRight");
+    }
+
+    if (refImg6.getBoundingClientRect().top < height) {
+        refImg6.classList.add("animate__animated");
+        refImg6.classList.add("animate__fadeInLeft");
+
+        refPan6.classList.add("animate__animated");
+        refPan6.classList.add("animate__fadeInRight");
     }
 }

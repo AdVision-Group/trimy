@@ -678,7 +678,7 @@ input[type="submit"],
     text-align: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
     #partners .content .partners {
         display: flex;
         flex-direction: row;
@@ -700,7 +700,7 @@ input[type="submit"],
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     #partners .content .partners {
         display: flex;
         flex-direction: column;
@@ -786,6 +786,8 @@ input[type="submit"],
     display: flex;
     flex-direction: column;
 
+    
+    
     margin-top: 50px;
 }
 
@@ -842,6 +844,8 @@ input[type="submit"],
         opacity: 0.6;
 
         z-index: 2;
+
+        transition: opacity 400ms;
     }
 
     #references .content .references .item .image-panel .image-container .image {
@@ -900,6 +904,8 @@ input[type="submit"],
         opacity: 0.6;
 
         z-index: 2;
+
+        transition: opacity 400ms;
     }
 
     #references .content .references .item .image-panel .image-container .image {
@@ -958,6 +964,8 @@ input[type="submit"],
         opacity: 0.6;
 
         z-index: 2;
+
+        transition: opacity 400ms;
     }
 
     #references .content .references .item .image-panel .image-container .image {
@@ -1029,6 +1037,13 @@ input[type="submit"],
 
     margin: 15px 0px 10px 0px;
 }
+
+#ri1:hover #ro1 { opacity: 0; }
+#ri2:hover #ro2 { opacity: 0; }
+#ri3:hover #ro3 { opacity: 0; }
+#ri4:hover #ro4 { opacity: 0; }
+#ri5:hover #ro5 { opacity: 0; }
+#ri6:hover #ro6 { opacity: 0; }
 
 /* ------------------------------------------------------------------- */
 
